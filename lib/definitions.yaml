@@ -1,0 +1,372 @@
+
+q_ids: [
+
+    # Likert 1 to 5
+    2,  # Sad
+    3,  # Stressed
+    4,  # Anxious
+    5,  # Annoyed/irritated
+    6,  # Energetic
+    7,  # Happy
+    8,  # Motivated
+    9,  # Engaged
+    10,  # Lonely
+    # Binary
+    11,  # Right now, I'm looking forward to an upcoming activity
+    12,  # Right now I'm feeling good after doing something
+    13,  # Right now, I'm putting effort into planning something that will be enjoyable in the future
+    14,  # Right now, I could be doing something positive but am not because I don't think I'd enjoy it
+    15,  # Right now I could be doing something positive, but am not because it feels like too much effort
+    16,  # Right now, I'm feeling a sense of meaning and purpose
+    # Context
+    17,  # Right now I am with
+    18,  # I am enjoying this company
+    19,  # Right now I am doing
+    20,  # I am enjoying what I am doing
+]
+qid_label_map: {
+    2: "sad",
+    3: "stressed",
+    4: "anxious",
+    5: "annoyed",
+    6: "energetic",
+    7: "happy",
+    8: "motivated",
+    9: "engaged",
+    10: "lonely",
+    11: "anticipatory",
+    12: "consummatory",
+    13: "effort",
+    14: "inactive_enjoy",
+    15: "inactive_effort",
+    16: "meaning",
+    17: "with",
+    18: "enjoying_company",
+    19: "doing",
+    20: "enjoying_doing",
+}
+pos_affect_qids: [6, 7, 8, 9]
+neg_affect_qids: [2, 3, 4, 5]
+likert_qids: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+bool_qids: [11, 12, 13, 14, 15, 16]
+context_qids: [17, 18, 19, 20]
+
+activity_label_map: {
+    1: "social",
+    2: "physical",
+    3: "active_leisure",
+    4: "passive_leisure",
+    5: "work/study",
+    6: "tasks",
+    7: "transit",
+    8: "eating",
+    9: "childcare",
+    10: "other",
+    11: "nothing",
+}
+
+## Survey definitions
+survey_item_map: {
+    "phq14_total_score": "PHQ-8 Total Score",
+    "phq_1": "Little interest or pleasure in doing things",
+    "phq_10": "Trouble concentrating on things",
+    "phq_11": "Moving or speaking slowly",
+    "phq_12": "Being fidgety or restless",
+    "phq_13": "Feeling irritable",
+    "phq_14": "Little interest in sex",
+    "phq_2": "Feeling down, depressed",
+    "phq_3": "Feeling hopeless",
+    "phq_4": "Trouble falling asleep or staying asleep",
+    "phq_5": "Sleeping too much",
+    "phq_6": "Feeling tired or having little energy",
+    "phq_7": "Poor appetite",
+    "phq_8": "Overeating",
+    "phq_9": "Feeling bad about yourself",
+    "psqi_bathroom": "Bathroom use",
+    "psqi_bedtime": "Bedtime",
+    "psqi_cannot_breathe": "Cannot breathe comfortably",
+    "psqi_cannot_sleep_30mins": "Cannot get to sleep within 30 minutes",
+    "psqi_cold": "Feel too cold",
+    "psqi_cough": "Cough or snore loudly",
+    "psqi_daydys": "Daytime dysfunction due to sleepiness",
+    "psqi_distb": "Sleep disturbance",
+    "psqi_enthusiasm": "Keep up enough enthusiasm",
+    "psqi_hot": "Feel too hot",
+    "psqi_hours_sleep": "Hours of sleep",
+    "psqi_hse_tmphse": "Sleep Efficiency",
+    "psqi_laten": "Sleep Latency",
+    "psqi_meds_sleep": "Medication for sleep",
+    "psqi_nightmares": "Nightmares",
+    "psqi_othr_reasons": "Other reasons",
+    "psqi_pain": "Have pain",
+    "psqi_rate_sleep": "Sleep rating",
+    "psqi_sleep_dur": "Duration of sleep",
+    "psqi_time_fall_asleep": "Minutes to fall asleep",
+    "psqi_total": "PSQI total score",
+    "psqi_trouble_awake": "Trouble staying awake",
+    "psqi_wakeup": "Wakeup time",
+    "psqi_wakeup_night": "Wake up at night",
+    "pvss_1": "Savored food",
+    "pvss_10": "Praise about work",
+    "pvss_11": "Time with others",
+    "pvss_12": "Accomplish goals",
+    "pvss_13": "Hugged by loved one",
+    "pvss_14": "Activity with friends",
+    "pvss_15": "Positive feedback on projects",
+    "pvss_16": "Upcoming meal",
+    "pvss_17": "Reached a goal",
+    "pvss_18": "Hug made happy after parted",
+    "pvss_19": "Expect to master task",
+    "pvss_20": "Pursued fun activities",
+    "pvss_21": "Admired beauty around me",
+    "pvss_2": "Energy in to activity I enjoy",
+    "pvss_3": "Fresh air outdoors",
+    "pvss_4": "Time with people I know",
+    "pvss_5": "Weekend activity sustained good mood",
+    "pvss_6": "Physical contact with person I felt close to",
+    "pvss_7": "Expected to enjoy moment outdoors",
+    "pvss_8": "Looked forward to feedback on work",
+    "pvss_9": "Expected to enjoy meals",
+    "pvss_effort_val_domain": "Effort valuation domain",
+    "pvss_food_total": "Food score",
+    "pvss_goals_total": "Goals score",
+    "pvss_hobbies_total": "Hobbies score",
+    "pvss_outdoors_total": "Outdoors score",
+    "pvss_physical_total": "Physical touch score",
+    "pvss_posfeed_total": "Positive feedvack score",
+    "pvss_response_domain": "Initial responsiveness domain",
+    "pvss_rew_anticip_domain": "Reward anticipation domain",
+    "pvss_rew_expect_domain": "Reward expectancy domain",
+    "pvss_rew_val_domain": "Reward valuation domain",
+    "pvss_satiation_domain": "Reward satiation domain",
+    "pvss_social_total": "Social interaction score",
+    "pvss_total": "PVSS total score",
+}
+
+sage_dx_cols: [
+    'sage_osdd',
+    'sage_mania',
+    'sage_hypomania',
+    'sage_past_manic',
+    'sage_past_hypomanic',
+    'sage_bp1',
+    'sage_bp2',
+    'sage_osbpd',
+    'sage_gad',
+    'sage_panic',
+    'sage_agoraphobia',
+    'sage_social_anxiety',
+    'sage_ocd',
+    'sage_ptsd',
+    'sage_adhd',
+    'sage_schizophrenia',
+    'sage_schizophreniform',
+    'sage_schizoaffective',
+    'sage_delusional',
+    'sage_brief_psychotic',
+    'sage_ospd',
+    'sage_uncertain_psychotic'
+]
+
+meds_use_cols: [
+    'meds_currentuse_ssri',
+    'meds_currentuse_snri',
+    'meds_currentuse_othrantidep',
+    'meds_currentuse_lithium',
+    'meds_currentuse_benzos',
+    'meds_currentuse_anticonv',
+    'meds_currentuse_typantipsy',
+    'meds_currentuse_atypantipsy',
+    'meds_currentuse_stimulant',
+    'meds_currentuse_sleep',
+    'meds_currentuse_otherspecific'
+]
+
+test_my_brain_input_cols: [
+    'tmb_vocab_accuracy',
+    'tmb_vpt_score',
+    'tmb_emorecog_accuracy',
+    'tmb_crt_medianrtc',
+    'tmb_dsc_medianrtc',
+    'tmb_mot_correct',
+    'tmb_gradcpt_dprime',
+    'tmb_gradcpt_crit',
+    'tmb_dsc_rate_correct_score',
+    'tmb_crt_rate_correct_score',
+    'tmb_dsc_num_correct',
+    'tmb_dsc_num_responses',
+    'tmb_dsc_meanrtc',
+    'tmb_crt_accuracy',
+]
+
+ami_total_cols: [
+    'ami_score_behav',
+    'ami_score_social',
+    'ami_score_emot',
+]
+
+group_treatment_map: {
+    "A": 1,
+    "B": 0,
+    "C": 1,
+}
+
+race_map: {
+    1: "White",
+    2: "Black/African American",
+    3: "Native American",
+    4: "Alaska Native",
+    5: "Native Hawaiian",
+    6: "Guamanian",
+    7: "Samoan",
+    8: "Other Pacific Islander",
+    9: "Asian Indian",
+    10: "Chinese",
+    11: "Filipino",
+    12: "Japanese",
+    13: "Korean",
+    14: "Vietnamese",
+    15: "Other Asian",
+    16: "Some other race",
+    17: "Don't know",
+    18: "Prefer not to answer",
+    20: "Multiple",
+}
+income_map: {
+    7: "Don't know",
+    8: "Prefer not to answer",
+    1: "Less than $10,000",
+    2: "$10,000 - $19,999",
+    3: "$20,000 - $39,999",
+    4: "$40,000 - $59,999",
+    5: "$60,000 - $99,999",
+    6: "$100,000 +",
+}
+
+gender_map: {
+    0: "Female",
+    1: "Male",
+    2: "Transgender",
+    3: "Other",
+}
+ethnicity_map: {
+    0: "No",
+    1: "Yes",
+    2: "Don't know",
+    3: "Prefer not to answer",
+}
+
+passive_feature_map: {
+    "audioExposure_mean": "Mean Ambient Noise",
+    "audioExposure_hours": "Ambient Noise Duration",
+    "audioExposure_count": "Count Ambient Noise",
+    "audioExposure_entries": "Entries (resampled) Ambient Noise",
+    "ActiveEnergyBurned_sum": "Sum Active Energy Burned",
+    "ActiveEnergyBurned_mean": "Mean Active Energy Burned",
+    "ActiveEnergyBurned_duration": "Active Energy Burned Duration",
+    "BasalEnergyBurned_sum": "Sum Basal Energy Burned",
+    "BasalEnergyBurned_mean": "Mean Basal Energy Burned",
+    "BasalEnergyBurned_duration": "Basal Energy Burned Duration",
+    "AppleExerciseTime_sum": "Sum Apple Exercise Time",
+    "AppleExerciseTime_count": "Count Apple Exercise Time",
+    "AppleExerciseTime_duration": "Apple Exercise Time Duration",
+    "StepCount_sum": "Sum Step Count",
+    "StepCount_count": "Count Step Count",
+    "StepCount_duration": "Step Count Duration",
+    "HeartRate_median": "Median Heart Rate",
+    "HeartRate_mean": "Mean Heart Rate",
+    "HeartRate_min": "Min. Heart Rate",
+    "HeartRate_max": "Max. Heart Rate",
+    "HeartRate_std": "Std. Heart Rate",
+    "HeartRate_intercept": "Intercept Heart Rate",
+    "HeartRate_slope": "Slope Heart Rate",
+    "HeartRate_count": "Count Heart Rate",
+    "HeartRate_bedrest_median": "Median Sleep Heart Rate",
+    "HeartRate_circadian_period": "Circadian Period Heart Rate",
+    "HeartRateVariabilitySDNN_median": "Median HRV",
+    "HeartRateVariabilitySDNN_mean": "Mean HRV",
+    "HeartRateVariabilitySDNN_min": "Min. HRV",
+    "HeartRateVariabilitySDNN_max": "Max. HRV",
+    "HeartRateVariabilitySDNN_std": "Std. HRV",
+    "HeartRateVariabilitySDNN_intercept": "Intercept HRV",
+    "HeartRateVariabilitySDNN_slope": "Slope HRV",
+    "HeartRateVariabilitySDNN_count": "Count HRV",
+    "HeartRateVariabilitySDNN_bedrest_median": "Median Sleep HRV",
+    "HeartRateVariabilitySDNN_circadian_period": "Circadian Period HRV",
+    "RespiratoryRate_median": "Median Respiratory Rate",
+    "RespiratoryRate_mean": "Mean Respiratory Rate",
+    "RespiratoryRate_min": "Min. Respiratory Rate",
+    "RespiratoryRate_max": "Max. Respiratory Rate",
+    "RespiratoryRate_std": "Std. Respiratory Rate",
+    "RespiratoryRate_intercept": "Intercept Respiratory Rate",
+    "RespiratoryRate_slope": "Slope Respiratory Rate",
+    "RespiratoryRate_count": "Count Respiratory Rate",
+    "RespiratoryRate_bedrest_median": "Median Sleep Respiratory Rate",
+    "RespiratoryRate_circadian_period": "Circadian Period Respiratory Rate",
+    "OxygenSaturation_median": "Median Oxygen Sat.",
+    "OxygenSaturation_mean": "Mean Oxygen Sat.",
+    "OxygenSaturation_min": "Min. Oxygen Sat.",
+    "OxygenSaturation_max": "Max. Oxygen Sat.",
+    "OxygenSaturation_std": "Std. Oxygen Sat.",
+    "OxygenSaturation_intercept": "Intercept Oxygen Sat.",
+    "OxygenSaturation_slope": "Slope Oxygen Sat.",
+    "OxygenSaturation_count": "Count Oxygen Sat.",
+    "OxygenSaturation_bedrest_median": "Median Sleep Oxygen Sat.",
+    "OxygenSaturation_circadian_period": "Circadian Period Oxygen Sat.",
+    "sleep_sleepDuration_day": "Sleep Duration",
+    "sleep_sleepDuration_day_min": "Min. Sleep Duration",
+    "sleep_sleepDuration_day_max": "Max Sleep Duration",
+    "sleep_sleepDuration_day_median": "Median Sleep Duration",
+    "sleep_sleepDuration_day_std": "Std. Sleep Duration",
+    "sleep_sleepEfficiency_day": "Sleep Efficiency",
+    "sleep_sleepEfficiency_day_min": "Min. Sleep Efficiency",
+    "sleep_sleepEfficiency_day_max": "Max Sleep Efficiency",
+    "sleep_sleepEfficiency_day_median": "Median Sleep Efficiency",
+    "sleep_sleepEfficiency_day_std": "Std. Sleep Efficiency",
+    "sleep_Awake_mean": "Mean Awake Time",
+    "sleep_Awake_count": "Awake Count",
+    "sleep_sleepOnsetLatency_day": "Sleep Onset Latency",
+    "sleep_sleepOnsetLatency_day_min": "Min. Sleep Onset Latency",
+    "sleep_sleepOnsetLatency_day_max": "Max Sleep Onset Latency",
+    "sleep_sleepOnsetLatency_day_median": "Median Sleep Onset Latency",
+    "sleep_sleepOnsetLatency_day_std": "Std. Sleep Onset Latency",
+    "sleep_sleepOnsetHours_day": "Sleep Onset Time",
+    "sleep_sleepOnsetHours_day_std": "Std. Sleep Onset",
+    "sleep_sleepOnsetHours_day_median": "Median Sleep Onset",
+    "sleep_sleepOffsetHours_day": "Sleep Offset Time",
+    "sleep_sleepOffsetHours_day_std": "Std. Sleep Offset",
+    "sleep_sleepOffsetHours_day_median": "Median Sleep Offset",
+    "sleep_bedrestOffsetHours_day": "Bedrest Offset Time",
+    "sleep_bedrestOffsetHours_day_std": "Std. Bedrest Offset",
+    "sleep_bedrestOffsetHours_day_median": "Median Bedrest Offset",
+    "sleep_bedrestOnsetHours_day": "Bedrest Onset Time",
+    "sleep_bedrestOnsetHours_day_std": "Std. Bedrest Onset",
+    "sleep_bedrestOnsetHours_day_median": "Median Bedrest Onset",
+    "sleep_bedrestDuration_day": "Bedrest Duration",
+    "sleep_bedrestDuration_day_median": "Median Bedrest Duration",
+    "sleep_bedrestDuration_day_min": "Min. Bedrest Duration",
+    "sleep_bedrestDuration_day_max": "Max Bedrest Duration",
+    "sleep_bedrestDuration_day_std": "Std. Bedrest Duration",
+    "bedrest_audioExposure_mean": "Mean Bedrest Ambient Noise",
+}
+
+OPTIMA_redcap_event_order: [
+    "baseline_arm_1",
+    "week_1_arm_1",
+    "week_2_arm_1",
+    "week_4_arm_1",
+    "week_6_arm_1",
+    "week_7_arm_1",
+    "week_8_arm_1",
+    "week_10_arm_1",
+    "prescan_arm_1",
+    "scan_arm_1",
+]
+model_name_map: {
+    "rf": "Random Forest",
+    "xgboost": "XGBoost",
+    "lgbm": "LightGBM",
+    "catboost": "CatBoost",
+    "lrl1": "LR L1",
+    "lrl2": "LR L2",
+}

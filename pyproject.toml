@@ -1,0 +1,26 @@
+[project]
+name = "optima-momentary-ema-detection"
+version = "0.1.0"
+description = "Code for detection of momentary EMA responses in the OPTIMA study"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alive-progress>=3.2.0",
+    "flaml[automl]>=2.3.2",
+    "jupyter>=1.1.1",
+    "llvmlite>=0.43.0",
+    "mhealth-feature-generation",
+    "numba>=0.60.0",
+    "numpy==2.0.0",
+    "shap>=0.46.0",
+]
+
+[tool.uv.sources]
+mhealth-feature-generation = { git = "https://github.com/akre96/mHealth-feature-generation.git" }
+
+[tool.ruff]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.2",
+]

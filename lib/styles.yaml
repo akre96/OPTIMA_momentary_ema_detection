@@ -1,0 +1,19 @@
+
+ucla_darkest_blue: "#0B3C5D"
+ucla_darker_blue: "#005587"
+ucla_blue: "#2774AE"
+ucla_lighter_blue: "#8BB8E8"
+ucla_lightest_blue: "#DAEBFE"
+
+ucla_blues: [
+    "#0B3C5D",
+   "#005587",
+   "#2774AE",
+   "#8BB8E8",
+   "#DAEBFE",
+]
+
+
+ucla_darkest_gold: "#FFB81C"
+ucla_darker_gold: "#FFC72C"
+ucla_gold: "#FFD100"

@@ -1,0 +1,31 @@
+# Description: Configuration file for the OPTIMA momentary EMA detection pipeline
+
+## PATHS
+# Survey responses
+survey_data_paths: [
+  "/Users/sakre/Data/OPTIMA/OPTIMA_Surveys/survey_data_2024-09-06_ts.csv",
+]
+
+# Momentary EMA Analysis Train test split
+momentary_ema_train_test_split_path: "/Users/sakre/Code/dgc/WellcomeLeap/analysis_notebooks/cache/OPTIMA_EMA_TrainTestSplit.txt"
+
+# Timeshift path
+timeshift_path: "/Users/sakre/Data/OPTIMA/timeshift_maps/timeshift_map_2024-04-04.csv"
+
+# Binary thresholds for survey items and total outcomes
+thresholds_path: "/Users/sakre/Data/OPTIMA/PHQ_PVSS_PSQI_binary_thresholds-Jan212024.xlsx"
+
+# HealthKit data path
+hk_path: "~/Data/OPTIMA/OPTIMA_HealthKit/HealthKit_Datastreams"
+hk_daily_path: "~/Data/OPTIMA/OPTIMA_HealthKit/hk_features_Jun22-2024.csv"
+
+# EMA data path
+ema_path: "/Users/sakre/Data/OPTIMA/sql_export/survey_response_202404281032-ema.csv"
+mini_ema_path: "/Users/sakre/Code/dgc/WellcomeLeap/analysis_notebooks/cache/ILIAD_TreatmentPrediction/mini_ema.csv"
+
+# Output path
+cache_path: "/Users/sakre/Code/dgc/WellcomeLeap/OPTIMA_momentary_ema_detection/cache"
+
+
+# mTurk data
+mTurk_data_path: "/Users/sakre/Data/OPTIMA/mTurk/WL+Anhedonia+and+Depression+MTurk+Study_March+7%2C+2022_04.34.xlsx"

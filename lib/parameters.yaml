@@ -1,0 +1,16 @@
+## EMA QC parameters
+ema_session_duration_range_seconds: [10, 300]
+
+## FLAML estimator list
+flaml_estimator_list: [
+  "xgboost",
+  "lgbm",
+  "rf",
+  "lrl1",
+  "lrl2",
+]
+flaml_estimator_list_reg: [
+  "xgboost",
+  "lgbm",
+  "rf",
+]
